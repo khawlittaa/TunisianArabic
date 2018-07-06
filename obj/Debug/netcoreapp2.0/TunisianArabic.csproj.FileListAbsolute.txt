@@ -1,0 +1,13 @@
+C:\Users\Khawla\Desktop\LearningTunisianArabic\TunisianArabic\bin\Debug\netcoreapp2.0\TunisianArabic.deps.json
+C:\Users\Khawla\Desktop\LearningTunisianArabic\TunisianArabic\bin\Debug\netcoreapp2.0\TunisianArabic.runtimeconfig.json
+C:\Users\Khawla\Desktop\LearningTunisianArabic\TunisianArabic\bin\Debug\netcoreapp2.0\TunisianArabic.runtimeconfig.dev.json
+C:\Users\Khawla\Desktop\LearningTunisianArabic\TunisianArabic\bin\Debug\netcoreapp2.0\TunisianArabic.dll
+C:\Users\Khawla\Desktop\LearningTunisianArabic\TunisianArabic\bin\Debug\netcoreapp2.0\TunisianArabic.pdb
+C:\Users\Khawla\Desktop\LearningTunisianArabic\TunisianArabic\obj\Debug\netcoreapp2.0\TunisianArabic.csproj.CoreCompileInputs.cache
+C:\Users\Khawla\Desktop\LearningTunisianArabic\TunisianArabic\obj\Debug\netcoreapp2.0\TunisianArabic.AssemblyInfoInputs.cache
+C:\Users\Khawla\Desktop\LearningTunisianArabic\TunisianArabic\obj\Debug\netcoreapp2.0\TunisianArabic.AssemblyInfo.cs
+C:\Users\Khawla\Desktop\LearningTunisianArabic\TunisianArabic\obj\Debug\netcoreapp2.0\TunisianArabic.dll
+C:\Users\Khawla\Desktop\LearningTunisianArabic\TunisianArabic\obj\Debug\netcoreapp2.0\TunisianArabic.pdb
+C:\Users\Khawla\Desktop\LearningTunisianArabic\TunisianArabic\obj\Debug\netcoreapp2.0\TunisianArabic.csprojResolveAssemblyReference.cache
+C:\Users\Khawla\Desktop\LearningTunisianArabic\TunisianArabic\bin\Debug\netcoreapp2.0\LogicClasses.dll
+C:\Users\Khawla\Desktop\LearningTunisianArabic\TunisianArabic\bin\Debug\netcoreapp2.0\LogicClasses.pdb

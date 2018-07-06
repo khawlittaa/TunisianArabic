@@ -1,0 +1,94 @@
+@page
+@model TunisianArabic.Pages.Words.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+<h2>Index</h2>
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+
+<form>
+    <p>
+        <select asp-for="WordNature" asp-items="Model.Natures">
+            <option value="">AllWords</option>
+        </select>
+
+        Word: <input type="text" name="SearchString">
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+@foreach (var item in Model.Words)
+{
+    <br><br>
+
+    <div class="container-fluid well span6">
+        <div class="row-fluid">
+            <div class="span2">
+                <img src=@Html.DisplayFor(modelItem => item.PicURL) class="img-circle" height="200" width="150">
+            </div>
+
+            <div class="span8">
+                <strong>Tunisian Word : </strong>         @Html.DisplayFor(modelItem => item.TunWord) <br />
+                <strong>Meaning in English : </strong>    @Html.DisplayFor(modelItem => item.EngWord) <br />
+                <strong>Meaning in Arab : </strong>       @Html.DisplayFor(modelItem => item.ArabWord) <br />
+                <strong>How to pronounce it : </strong>   @Html.DisplayFor(modelItem => item.Pronunciation) <br />
+                <strong> Description : </strong>          @Html.DisplayFor(modelItem => item.Description) <br />
+                <strong> Nature : </strong>               @Html.DisplayFor(modelItem => item.Nature)  <br />
+                <strong>Social media Typing : </strong>   @Html.DisplayFor(modelItem => item.FbTypping) <br />
+
+            </div>
+
+            <div class="span2">
+                <div class="btn-group">
+                    <a class="btn dropdown-toggle btn-info" data-toggle="dropdown" href="#">
+                        Action
+                        <span class="icon-cog icon-white"></span><span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a asp-page="./Edit" asp-route-id="@item.ID">Edit <span class="icon-wrench"></span> </a></li>
+                        <li> <a asp-page="./Details" asp-route-id="@item.ID">Details <span class="label-info"></span> </a></li>
+                        <li><a asp-page="./Delete" asp-route-id="@item.ID">Delete  <span class="icon-trash"></span> </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+@*@foreach (var item in Model.Word)
+    {
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-heading"><h3>Tunisian Word : </h3>    @Html.DisplayFor(modelItem => item.TunWord) </div>
+                <div class="panel-body">
+                    <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
+                        <img alt="User Pic" src=@Html.DisplayFor(modelItem => item.PicURL) id="profile-image1" class="img-circle img-responsive">
+
+
+                    </div>
+                    <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
+                        <div class="container">
+                            <strong>Meaning in English : </strong>    @Html.DisplayFor(modelItem => item.EngWord) <br />
+                            <strong>Meaning in Arab : </strong>       @Html.DisplayFor(modelItem => item.ArabWord)<br />
+
+
+                        </div>
+                        <hr>
+                        <ul class="container details">
+                            <li><p><span  style="width:50px;"></span><strong>How to pronounce it : </strong>   @Html.DisplayFor(modelItem => item.Pronunciation)</p></li> <br />
+                            <li><p><span  style="width:50px;"></span><strong> Description : </strong>          @Html.DisplayFor(modelItem => item.Description)</p></li><br />
+                            <li><p><span  style="width:50px;"></span><strong> Nature : </strong>               @Html.DisplayFor(modelItem => item.Nature)</p></li><br />
+                            <li><p><span  style="width:50px;"></span><strong>Social media Typing : </strong>   @Html.DisplayFor(modelItem => item.FbTypping)</p></li><br />
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        }*@
+

@@ -1,0 +1,73 @@
+@page
+@model TunisianArabic.Pages.Words.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Word</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Word.TunWord)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Word.TunWord)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Word.EngWord)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Word.EngWord)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Word.ArabWord)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Word.ArabWord)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Word.Pronunciation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Word.Pronunciation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Word.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Word.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Word.Nature)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Word.Nature)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Word.FbTypping)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Word.FbTypping)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Word.Score)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Word.Score)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Word.PicURL)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Word.PicURL)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Word.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

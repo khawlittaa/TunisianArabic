@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="TunisianArabic" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Khawla\\Desktop\\LearningTunisianArabic\\TunisianArabic\\obj\\Release\\netcoreapp2\.0\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="TunisianArabic.Models.WordContext" description="" value="Server=tcp:wordsserver.database.windows.net,1433;Initial Catalog=TunisianWords;Persist Security Info=False;User ID=khawla;Password=azerty123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\Khawla\\Desktop\\LearningTunisianArabic\\TunisianArabic\\obj\\Release\\netcoreapp2\.0\\PubTmp\\EFSQLScripts\\TunisianArabic\.Models\.WordContext\.sql$" />
+  </parameter>
+</parameters>

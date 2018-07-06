@@ -1,0 +1,84 @@
+﻿@page
+@model GameModel
+@{
+}
+
+@*<h3> First Game : Guess the right Word </h3>
+    <p> in this game you'll try to guess the right  word (Tunisian Word) based on a description of the word <br />
+        if you guess all  the  words right  you'll have a score of 100 <br />
+        <h6>there are 20 words in this game & you'll get 5pt score for each word </h6>
+    </p>
+
+    <form method="post">
+        <table>
+            <tr>
+                <td>
+                    <input asp-for="Description" type="text" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+        <input asp-for="TunWord" type="text" />
+        <button type="submit">Enter Word</button>
+    </td>
+                <td> Score @Model.Score </td>
+            </tr>
+
+            <tr>
+                <td>
+
+                    <button type="submit" asp-page-handler="Check">Check Answer</button>
+                </td>
+                <td> @Model.Statue  Answer : @Model.Answer </td>
+                <td>
+                    <button type="submit" asp-page-handler="Next">Next</button>
+
+                </td>
+            </tr>
+
+
+        </table>
+
+        <div> your Final Score is : @Model.FinalScore </div>
+    </form>*@
+
+
+<h3> Second game : Say It Outloud </h3>
+<p>
+    this game is a fun game to test how well can you speak Tunisian Accent  <br />
+    <b> AKA "derja tounsia" or "el aamia (3amias)" </b><br />
+    <h5>the Rule are easy </h5>
+    you'll try to say a few sentences out loud and if you say them in a correct <b>Tunisian</b> way you Will get 10 points in your score <br />
+    the Game ends when you get 100 pts <b> You can speak Tunisian perfectly !!</b>
+</p>
+
+<form method="post">
+    <table>
+        <tr>
+            <td>
+                Sentence :  @Model.TunWord
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Meanning in English:   @Model.Meanning
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <button type="submit" asp-page-handler="Next">Next</button>
+
+            </td>
+        </tr>
+
+
+    </table>
+
+    <div> your Final Score is : @Model.Score </div>
+</form>
+
+
+<a href="Game">Start a new game</a>

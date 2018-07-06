@@ -1,0 +1,76 @@
+@page
+@model TunisianArabic.Pages.Words.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Word</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Word.TunWord)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Word.TunWord)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Word.EngWord)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Word.EngWord)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Word.ArabWord)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Word.ArabWord)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Word.Pronunciation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Word.Pronunciation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Word.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Word.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Word.Nature)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Word.Nature)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Word.FbTypping)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Word.FbTypping)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Word.Score)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Word.Score)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Word.PicURL)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Word.PicURL)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Word.ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>
